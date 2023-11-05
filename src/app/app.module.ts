@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { CategoryItemComponent } from './category-item/category-item.component';
-import { CategoryDetailComponent } from './category-detail/category-detail.component';
 import { HeaderComponent } from './header/header.component';
 import { AddBoxComponent } from './add-box/add-box.component';
 
@@ -14,7 +13,6 @@ import { AddBoxComponent } from './add-box/add-box.component';
     AppComponent,
     CategoryListComponent,
     CategoryItemComponent,
-    CategoryDetailComponent,
     HeaderComponent,
     AddBoxComponent
   ],

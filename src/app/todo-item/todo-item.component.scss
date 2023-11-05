@@ -1,0 +1,19 @@
+@import '../colors';
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+
+  .checkbox {
+    border: 2px solid $purple;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+  }
+}

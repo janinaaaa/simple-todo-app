@@ -10,10 +10,30 @@
   flex-direction: row;
   font-size: 18px;
 
+
+
   .checkbox {
-    border: 2px solid $purple;
+    border: 2px solid rgb($purple, 0.3);
     border-radius: 50%;
     height: 28px;
     width: 28px;
+    display: flex;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+
+    .check-icon {
+      margin: auto;
+      // hide by default
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+  }
+}
+
+.todo-item:hover .checkbox{
+  background: rgb($purple, 0.3);
+  .check-icon {
+    opacity: 0.4;
   }
 }

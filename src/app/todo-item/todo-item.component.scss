@@ -3,6 +3,7 @@
 .todo-container {
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid rgb($grey, 0.3);
 }
 
 .todo-item {
@@ -11,9 +12,9 @@
   align-items: center;
   font-size: 18px;
   padding: 20px;
-  border-bottom: 1px solid rgb($grey, 0.3);
 
   cursor: pointer;
+  width: max-content;
 
 
   .checkbox {

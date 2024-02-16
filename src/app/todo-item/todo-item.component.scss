@@ -11,7 +11,9 @@
   align-items: center;
   font-size: 18px;
   padding: 20px;
+  border-bottom: 1px solid rgb($grey, 0.3);
 
+  cursor: pointer;
 
 
   .checkbox {
@@ -29,8 +31,13 @@
       // hide by default
       opacity: 0;
       transition: opacity 0.3s;
+      color: rgb($dark-grey, 1);
     }
 
+  }
+
+  &.completed {
+    color: rgb($dark-grey, 0.7);
   }
 }
 
@@ -40,3 +47,43 @@
     opacity: 0.4;
   }
 }
+
+.todo-item.completed .checkbox {
+  background: rgb($purple, 0.6);
+  border-color: rgb($purple, 0.6);
+
+  .check-icon {
+    opacity: 1;
+  }
+
+}
+
+.todo-item:hover .todo-controls {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.2s;
+}
+
+.todo-item .todo-controls {
+  position: relative;
+  bottom: 0;
+  right: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  display: flex;
+
+  .todo-control-button {
+    display: flex;
+    background: rgb($grey, 0.1);
+    padding: 7px 10px;
+    border-radius: 10px;
+
+    &:hover {
+      background: rgb($grey, 0.3);
+    }
+
+
+  }
+}
+

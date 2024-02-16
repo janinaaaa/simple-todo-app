@@ -1,10 +1,18 @@
 <div class="todo-container">
-<div class="todo-item">
+<div class="todo-item" [ngClass]="{'completed': completed}">
   <div class="checkbox">
     <span class="material-symbols-outlined check-icon">check</span>
   </div>
     <div class="todo-text">
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
     </div>
+  <div class="todo-controls">
+    <div class="todo-control-button">
+      <span class="material-symbols-outlined control-icon is-danger"> edit </span>
+    </div>
+    <div class="todo-control-button">
+      <span class="material-symbols-outlined control-icon">delete</span>
+    </div>
+  </div>
 </div>
 </div>

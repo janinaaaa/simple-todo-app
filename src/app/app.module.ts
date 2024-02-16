@@ -8,6 +8,7 @@ import { AddBoxComponent } from './add-box/add-box.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoItemComponent } from './todo-item/todo-item.component';
 import {CommonModule} from "@angular/common";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {CommonModule} from "@angular/common";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {Todo} from "../shared/todo.model";
 
 @Component({
   selector: 'app-todo-item',
@@ -6,5 +7,5 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./todo-item.component.scss']
 })
 export class TodoItemComponent {
- @Input() completed = false;
+ @Input() todo !: Todo;
 }

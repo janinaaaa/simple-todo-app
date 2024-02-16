@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { AddBoxComponent } from './add-box/add-box.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoItemComponent } from './todo-item/todo-item.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

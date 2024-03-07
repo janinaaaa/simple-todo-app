@@ -19,4 +19,12 @@ export class TodoListComponent implements OnInit{
   getAllTodos(){
     return this.dataService.getAllTodos()
   }
+
+  toggleComplete(todo: Todo) {
+    todo.completed = !todo.completed
+  }
+
+  onDeleteClicked(todo: Todo) {
+
+  }
 }

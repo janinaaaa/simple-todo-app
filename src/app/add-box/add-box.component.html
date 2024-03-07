@@ -1,12 +1,12 @@
 <div class="add-box">
-  <form>
+  <form #addForm="ngForm" (ngSubmit)="onFormSubmit(addForm)">
     <h2 class="title is-5"> New Todo </h2>
     <div class="field is-grouped">
       <p class="control is-expanded">
-        <input type="text" class="input" placeholder="Type new To Do here">
+        <input type="text" class="input" placeholder="Type new To Do here" ngModel name="text" required>
       </p>
       <p class="control">
-        <button class="button alt-gradient-button">
+        <button type="submit" class="button alt-gradient-button" [disabled]="addForm.invalid">
           <span class="material-symbols-outlined">
             add
           </span>

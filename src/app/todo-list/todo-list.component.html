@@ -5,8 +5,14 @@
 <section class="section">
   <div class="container">
     <div class="todos-list" >
-      <app-todo-item *ngFor="let todo of todoList" [todo]="todo"></app-todo-item>
+      <app-todo-item *ngFor="let todo of todoList"
+                     [todo]="todo"
+                     (todoClicked)="toggleComplete(todo)"
+                     (deleteClicked)="onDeleteClicked(todo)"
+      ></app-todo-item>
 
     </div>
   </div>
 </section>
+
+

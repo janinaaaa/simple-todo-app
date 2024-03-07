@@ -25,6 +25,7 @@ export class TodoListComponent implements OnInit{
   }
 
   onDeleteClicked(todo: Todo) {
-
+    const index = this.todoList.indexOf(todo)
+    this.dataService.deleteTodos(index)
   }
 }

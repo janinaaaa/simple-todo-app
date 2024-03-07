@@ -6,9 +6,6 @@ import {Todo} from "./todo.model";
 })
 export class DataService {
   todos: Todo[] = [
-    new Todo("Angular App", false),
-    new Todo("Blazor App", false),
-    new Todo("Stricken", true)
   ];
   constructor() { }
 
